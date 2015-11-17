@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Address Lookup</h2>
+    <p>Look up addresses by name</p>
+    <select name="activeName" ng-model="activeName" ng-options='user.name for user in users' ng-change="getData()">
+        <!--<option ng-repeat="name in names" value="{{name.name}}">-->
+            <!--{{name.name}}-->
+        <!--</option>-->
+    </select>
+    <div ng-repeat="address in addresses">
+        <p>{{address.address_street}},
+            {{address.address_city}},
+            {{address.address_state}},
+            {{address.address_zip}}
+        </p>
+    </div>
+</div>

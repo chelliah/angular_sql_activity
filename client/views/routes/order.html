@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Order Lookup</h2>
+    <select name="activeName" ng-model="activeName" ng-options='user.name for user in users'>
+        <!--<option ng-repeat="name in names" value="{{name.name}}">-->
+        <!--{{name.name}}-->
+        <!--</option>-->
+    </select>
+    <input type="date" ng-model="startDate" name="startDate" placeholder="Enter a Start Date">
+    <input type="date" ng-model="endDate" name="endDate" placeholder="Enter an End Date">
+    <button type="submit" ng-click="getData()">Submit</button>
+
+    <div ng-repeat="order in orders">
+        <p>{{order.name}}: {{order.address_street}}, {{order.address_city}}, {{order.address_state}} {{order.address_zip}}</p>
+        <p>Date Added: {{order.date_added}}, Date Ordered: {{order.order_date}}</p>
+    </div>
+</div>
