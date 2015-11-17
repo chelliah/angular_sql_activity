@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+select{
+    margin: 0 auto;
+    display: inherit;
+}
+.subhead{
+    text-align: center;
+}
+
+.entry {
+    width: 75%;
+    background-color: #9dddee;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.dateForm {
+    text-align: center;
+    margin: 0 auto;
+    display: inherit;
+}
+
+.orderSum{
+    width:75%;
+    margin: 0 auto;
+}
