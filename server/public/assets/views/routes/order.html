@@ -16,7 +16,7 @@
         <div class="entry">
             <p>Name: {{order.name}}</p>
             <p>Address: {{order.address_street}}, {{order.address_city}}, {{order.address_state}} {{order.address_zip}}</p>
-            <p>Date Added: {{order.date_added}} </p>
+            <p>Date Added: {{order.date_added  | date:'MM/dd/yyyy'}} </p>
             <p>Date Ordered: {{order.order_date | date:'MM/dd/yyyy'}}</span></p>
         </div>
     </div>
